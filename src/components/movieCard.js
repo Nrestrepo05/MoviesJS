@@ -2,7 +2,7 @@ const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
 const movieCard = (movie) => {
   const view = `
-    <a href="/movies/${movie.id}">
+    <a href="/MoviesJS/movies/${movie.id}">
       <div class="movie-card">
         <div class="movie-card__info">
           <h3 class="movie-card__">${movie.title}</h3>

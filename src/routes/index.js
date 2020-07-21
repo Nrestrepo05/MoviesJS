@@ -10,12 +10,12 @@ import carouselScroll from '../utils/carouselScroll';
 const router = async () => {
   const main = null || document.getElementById('main');
 
-  page('/', async () => {
+  page('/MoviesJS/', async () => {
     main.innerHTML = await Home();
     carouselScroll();
   });
 
-  page('/movies/:id', async (context) => {
+  page('/MoviesJS/movies/:id', async (context) => {
     const movieId = context.params.id;
     main.innerHTML = await MovieDetail(movieId);
     carouselScroll();

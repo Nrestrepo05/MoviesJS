@@ -4,7 +4,12 @@
   "description": "A little web app that consume the api of 'themoviedb.org'",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "init:jest": "jest --init",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "build": "webpack --mode-production",
+    "start": "webpack-dev-server --mode development",
+    "jest:start": "jest --init"
   },
   "keywords": [
     "themoviedb.org",
@@ -13,6 +18,34 @@
     "javascript",
     "vanilla"
   ],
-  "author": "Nrestrepo05",
-  "license": "MIT"
+  "author": "@Nrestrepo05",
+  "license": "MIT",
+  "dependencies": {
+    "page": "^1.11.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-async-to-generator": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/runtime": "^7.10.4",
+    "babel-jest": "^26.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.1.0",
+    "jest-fetch-mock": "^3.0.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
 }

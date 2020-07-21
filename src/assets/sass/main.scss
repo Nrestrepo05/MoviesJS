@@ -1,0 +1,33 @@
+@import './utils/vars.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/error.scss';
+@import './components/carousel';
+@import './components/movieCard';
+@import './pages/movieDetail.scss';
+// @import './pages/home.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $main-color;
+  font-family: system-ui;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.page__container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.main {
+  padding-bottom: 40px;
+  margin-top: 10px;
+}
